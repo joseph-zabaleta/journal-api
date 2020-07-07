@@ -25,7 +25,7 @@ SECRET_KEY = 'tq$!qbd#jmln6cid+e&hegwd1c^z^pccq8s!5#1+n58$eb@u8n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://full-stack-journal-project.herokuapp.com/']
 
 
 # Application definition
