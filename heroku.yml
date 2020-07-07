@@ -1,0 +1,10 @@
+build:
+    docker:
+        web: journal_project/Dockerfile
+release:
+    image: web
+    command:
+        - mkdir -p static
+        # - python manage.py collectstatic --noinput
+run:
+    web: gunicorn config.wsgi
