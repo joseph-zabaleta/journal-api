@@ -4,6 +4,6 @@ build:
 release:
     image: web
     command:
-        - python manage.py collectstatic
+        - echo "starting server"
 run:
     web: gunicorn config.wsgi
