@@ -4,6 +4,6 @@ build:
 release:
     image: web
     command:
-        - ./managepythn.sh
+        # - ./managepythn.sh
 run:
     web: gunicorn config.wsgi
