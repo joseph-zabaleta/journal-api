@@ -3,8 +3,5 @@ build:
         web: journal_project/Dockerfile
 release:
     image: web
-    command:
-        - mkdir staticfiles
-        - python manage.py collectstatic --noinput
 run:
     web: gunicorn config.wsgi
