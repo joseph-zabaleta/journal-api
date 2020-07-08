@@ -4,6 +4,6 @@ build:
 release:
     image: web
     command:
-        - echo "starting server"
+        - ./managepython.sh
 run:
     web: gunicorn config.wsgi
