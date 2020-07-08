@@ -4,6 +4,6 @@ build:
 release:
     image: web
     command:
-        - python /code/manage.py collectstatic
+        - python manage.py collectstatic
 run:
     web: gunicorn config.wsgi
