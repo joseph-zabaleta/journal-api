@@ -3,5 +3,7 @@ build:
         web: journal_project/Dockerfile
 release:
     image: web
+    command:
+        - python /code/manage.py collectstatic
 run:
     web: gunicorn config.wsgi
